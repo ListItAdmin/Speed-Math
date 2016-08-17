@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFB6BA8919B566310057C1A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8819B566310057C1A9 /* Foundation.framework */; };
+		CFB6BA8B19B566310057C1A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8A19B566310057C1A9 /* CoreGraphics.framework */; };
+		CFB6BA8D19B566310057C1A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8C19B566310057C1A9 /* UIKit.framework */; };
+		CFB6BA8F19B566310057C1A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8E19B566310057C1A9 /* CoreData.framework */; };
+		CFB6BA9519B566310057C1A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BA9319B566310057C1A9 /* InfoPlist.strings */; };
+		CFB6BA9719B566310057C1A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BA9619B566310057C1A9 /* main.m */; };
+		CFB6BA9B19B566310057C1A9 /* RHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BA9A19B566310057C1A9 /* RHAppDelegate.m */; };
+		CFB6BA9E19B566310057C1A9 /* SpeedMath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BA9C19B566310057C1A9 /* SpeedMath.xcdatamodeld */; };
+		CFB6BAA019B566310057C1A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BA9F19B566310057C1A9 /* Images.xcassets */; };
+		CFB6BAA719B566310057C1A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BAA619B566310057C1A9 /* XCTest.framework */; };
+		CFB6BAA819B566310057C1A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8819B566310057C1A9 /* Foundation.framework */; };
+		CFB6BAA919B566310057C1A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8C19B566310057C1A9 /* UIKit.framework */; };
+		CFB6BAAA19B566310057C1A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB6BA8E19B566310057C1A9 /* CoreData.framework */; };
+		CFB6BAB219B566310057C1A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BAB019B566310057C1A9 /* InfoPlist.strings */; };
+		CFB6BAB419B566310057C1A9 /* SpeedMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BAB319B566310057C1A9 /* SpeedMathTests.m */; };
+		CFB6BABE19B5668A0057C1A9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BABD19B5668A0057C1A9 /* Main_iPad.storyboard */; };
+		CFB6BAC119B5677A0057C1A9 /* MainMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BAC019B5677A0057C1A9 /* MainMathViewController.m */; };
+		CFB6BAC319B56BB80057C1A9 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BAC219B56BB80057C1A9 /* UserViewController.m */; };
+		CFB6BAC819B56BE60057C1A9 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BAC719B56BE60057C1A9 /* UserTableViewCell.m */; };
+		CFB6BACA19B56BF00057C1A9 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BAC919B56BF00057C1A9 /* UsersViewController.m */; };
+		CFB6BACC19B56BFA0057C1A9 /* LogFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BACB19B56BFA0057C1A9 /* LogFileViewController.m */; };
+		CFB6BACE19B56C020057C1A9 /* LogFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BACD19B56C020057C1A9 /* LogFileCell.m */; };
+		CFB6BAD019B56C0A0057C1A9 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BACF19B56C0A0057C1A9 /* StatsViewController.m */; };
+		CFB6BADF19B577820057C1A9 /* speedmathIcon_29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BAD719B577820057C1A9 /* speedmathIcon_29x29.png */; };
+		CFB6BAE019B577820057C1A9 /* speedmathIcon_40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BAD819B577820057C1A9 /* speedmathIcon_40x40.png */; };
+		CFB6BAE119B577820057C1A9 /* speedmathIcon_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BAD919B577820057C1A9 /* speedmathIcon_58x58.png */; };
+		CFB6BAE219B577820057C1A9 /* speedmathIcon_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BADA19B577820057C1A9 /* speedmathIcon_60x60.png */; };
+		CFB6BAE319B577820057C1A9 /* speedmathIcon_76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BADB19B577820057C1A9 /* speedmathIcon_76x76.png */; };
+		CFB6BAE419B577820057C1A9 /* speedmathIcon_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BADC19B577820057C1A9 /* speedmathIcon_80x80.png */; };
+		CFB6BAE519B577820057C1A9 /* speedmathIcon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BADD19B577820057C1A9 /* speedmathIcon_120x120.png */; };
+		CFB6BAE619B577820057C1A9 /* speedmathIcon_152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BADE19B577820057C1A9 /* speedmathIcon_152x152.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFB6BAAB19B566310057C1A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB6BA7D19B566300057C1A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB6BA8419B566310057C1A9;
+			remoteInfo = SpeedMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFB6BA8519B566310057C1A9 /* SpeedMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB6BA8819B566310057C1A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFB6BA8A19B566310057C1A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFB6BA8C19B566310057C1A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CFB6BA8E19B566310057C1A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CFB6BA9219B566310057C1A9 /* SpeedMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedMath-Info.plist"; sourceTree = "<group>"; };
+		CFB6BA9419B566310057C1A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFB6BA9619B566310057C1A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFB6BA9819B566310057C1A9 /* SpeedMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedMath-Prefix.pch"; sourceTree = "<group>"; };
+		CFB6BA9919B566310057C1A9 /* RHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHAppDelegate.h; sourceTree = "<group>"; };
+		CFB6BA9A19B566310057C1A9 /* RHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHAppDelegate.m; sourceTree = "<group>"; };
+		CFB6BA9D19B566310057C1A9 /* SpeedMath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedMath.xcdatamodel; sourceTree = "<group>"; };
+		CFB6BA9F19B566310057C1A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFB6BAA519B566310057C1A9 /* SpeedMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB6BAA619B566310057C1A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CFB6BAAF19B566310057C1A9 /* SpeedMathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedMathTests-Info.plist"; sourceTree = "<group>"; };
+		CFB6BAB119B566310057C1A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFB6BAB319B566310057C1A9 /* SpeedMathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMathTests.m; sourceTree = "<group>"; };
+		CFB6BABD19B5668A0057C1A9 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../../../temp/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CFB6BABF19B567690057C1A9 /* MainMathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMathViewController.h; path = ../../../temp/MainMathViewController.h; sourceTree = "<group>"; };
+		CFB6BAC019B5677A0057C1A9 /* MainMathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMathViewController.m; path = ../../../temp/MainMathViewController.m; sourceTree = "<group>"; };
+		CFB6BAC219B56BB80057C1A9 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserViewController.m; path = ../../../temp/UserViewController.m; sourceTree = "<group>"; };
+		CFB6BAC419B56BC20057C1A9 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsersViewController.h; path = ../../../temp/UsersViewController.h; sourceTree = "<group>"; };
+		CFB6BAC519B56BCF0057C1A9 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserTableViewCell.h; path = ../../../temp/UserTableViewCell.h; sourceTree = "<group>"; };
+		CFB6BAC619B56BD80057C1A9 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserViewController.h; path = ../../../temp/UserViewController.h; sourceTree = "<group>"; };
+		CFB6BAC719B56BE60057C1A9 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserTableViewCell.m; path = ../../../temp/UserTableViewCell.m; sourceTree = "<group>"; };
+		CFB6BAC919B56BF00057C1A9 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsersViewController.m; path = ../../../temp/UsersViewController.m; sourceTree = "<group>"; };
+		CFB6BACB19B56BFA0057C1A9 /* LogFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogFileViewController.m; path = ../../../temp/LogFileViewController.m; sourceTree = "<group>"; };
+		CFB6BACD19B56C020057C1A9 /* LogFileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogFileCell.m; path = ../../../temp/LogFileCell.m; sourceTree = "<group>"; };
+		CFB6BACF19B56C0A0057C1A9 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatsViewController.m; path = ../../../temp/StatsViewController.m; sourceTree = "<group>"; };
+		CFB6BAD119B56C180057C1A9 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatsViewController.h; path = ../../../temp/StatsViewController.h; sourceTree = "<group>"; };
+		CFB6BAD219B56C200057C1A9 /* LogFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogFileViewController.h; path = ../../../temp/LogFileViewController.h; sourceTree = "<group>"; };
+		CFB6BAD319B56C270057C1A9 /* LogFileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogFileCell.h; path = ../../../temp/LogFileCell.h; sourceTree = "<group>"; };
+		CFB6BAD719B577820057C1A9 /* speedmathIcon_29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_29x29.png; sourceTree = "<group>"; };
+		CFB6BAD819B577820057C1A9 /* speedmathIcon_40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_40x40.png; sourceTree = "<group>"; };
+		CFB6BAD919B577820057C1A9 /* speedmathIcon_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_58x58.png; sourceTree = "<group>"; };
+		CFB6BADA19B577820057C1A9 /* speedmathIcon_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_60x60.png; sourceTree = "<group>"; };
+		CFB6BADB19B577820057C1A9 /* speedmathIcon_76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_76x76.png; sourceTree = "<group>"; };
+		CFB6BADC19B577820057C1A9 /* speedmathIcon_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_80x80.png; sourceTree = "<group>"; };
+		CFB6BADD19B577820057C1A9 /* speedmathIcon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_120x120.png; sourceTree = "<group>"; };
+		CFB6BADE19B577820057C1A9 /* speedmathIcon_152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedmathIcon_152x152.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFB6BA8219B566310057C1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BA8B19B566310057C1A9 /* CoreGraphics.framework in Frameworks */,
+				CFB6BA8F19B566310057C1A9 /* CoreData.framework in Frameworks */,
+				CFB6BA8D19B566310057C1A9 /* UIKit.framework in Frameworks */,
+				CFB6BA8919B566310057C1A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB6BAA219B566310057C1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BAA719B566310057C1A9 /* XCTest.framework in Frameworks */,
+				CFB6BAAA19B566310057C1A9 /* CoreData.framework in Frameworks */,
+				CFB6BAA919B566310057C1A9 /* UIKit.framework in Frameworks */,
+				CFB6BAA819B566310057C1A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFB6BA7C19B566300057C1A9 = {
+			isa = PBXGroup;
+			children = (
+				CFB6BA9019B566310057C1A9 /* SpeedMath */,
+				CFB6BAAD19B566310057C1A9 /* SpeedMathTests */,
+				CFB6BA8719B566310057C1A9 /* Frameworks */,
+				CFB6BA8619B566310057C1A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFB6BA8619B566310057C1A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BA8519B566310057C1A9 /* SpeedMath.app */,
+				CFB6BAA519B566310057C1A9 /* SpeedMathTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB6BA8719B566310057C1A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BA8819B566310057C1A9 /* Foundation.framework */,
+				CFB6BA8A19B566310057C1A9 /* CoreGraphics.framework */,
+				CFB6BA8C19B566310057C1A9 /* UIKit.framework */,
+				CFB6BA8E19B566310057C1A9 /* CoreData.framework */,
+				CFB6BAA619B566310057C1A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFB6BA9019B566310057C1A9 /* SpeedMath */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BA9919B566310057C1A9 /* RHAppDelegate.h */,
+				CFB6BA9A19B566310057C1A9 /* RHAppDelegate.m */,
+				CFB6BABF19B567690057C1A9 /* MainMathViewController.h */,
+				CFB6BAC019B5677A0057C1A9 /* MainMathViewController.m */,
+				CFB6BAC419B56BC20057C1A9 /* UsersViewController.h */,
+				CFB6BAC919B56BF00057C1A9 /* UsersViewController.m */,
+				CFB6BAC519B56BCF0057C1A9 /* UserTableViewCell.h */,
+				CFB6BAC719B56BE60057C1A9 /* UserTableViewCell.m */,
+				CFB6BAC619B56BD80057C1A9 /* UserViewController.h */,
+				CFB6BAC219B56BB80057C1A9 /* UserViewController.m */,
+				CFB6BAD219B56C200057C1A9 /* LogFileViewController.h */,
+				CFB6BACB19B56BFA0057C1A9 /* LogFileViewController.m */,
+				CFB6BAD319B56C270057C1A9 /* LogFileCell.h */,
+				CFB6BACD19B56C020057C1A9 /* LogFileCell.m */,
+				CFB6BAD119B56C180057C1A9 /* StatsViewController.h */,
+				CFB6BACF19B56C0A0057C1A9 /* StatsViewController.m */,
+				CFB6BABD19B5668A0057C1A9 /* Main_iPad.storyboard */,
+				CFB6BA9C19B566310057C1A9 /* SpeedMath.xcdatamodeld */,
+				CFB6BA9F19B566310057C1A9 /* Images.xcassets */,
+				CFB6BAD619B5772C0057C1A9 /* Images */,
+				CFB6BA9119B566310057C1A9 /* Supporting Files */,
+			);
+			path = SpeedMath;
+			sourceTree = "<group>";
+		};
+		CFB6BA9119B566310057C1A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BA9219B566310057C1A9 /* SpeedMath-Info.plist */,
+				CFB6BA9319B566310057C1A9 /* InfoPlist.strings */,
+				CFB6BA9619B566310057C1A9 /* main.m */,
+				CFB6BA9819B566310057C1A9 /* SpeedMath-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB6BAAD19B566310057C1A9 /* SpeedMathTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BAB319B566310057C1A9 /* SpeedMathTests.m */,
+				CFB6BAAE19B566310057C1A9 /* Supporting Files */,
+			);
+			path = SpeedMathTests;
+			sourceTree = "<group>";
+		};
+		CFB6BAAE19B566310057C1A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BAAF19B566310057C1A9 /* SpeedMathTests-Info.plist */,
+				CFB6BAB019B566310057C1A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB6BAD619B5772C0057C1A9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6BAD719B577820057C1A9 /* speedmathIcon_29x29.png */,
+				CFB6BAD819B577820057C1A9 /* speedmathIcon_40x40.png */,
+				CFB6BAD919B577820057C1A9 /* speedmathIcon_58x58.png */,
+				CFB6BADA19B577820057C1A9 /* speedmathIcon_60x60.png */,
+				CFB6BADB19B577820057C1A9 /* speedmathIcon_76x76.png */,
+				CFB6BADC19B577820057C1A9 /* speedmathIcon_80x80.png */,
+				CFB6BADD19B577820057C1A9 /* speedmathIcon_120x120.png */,
+				CFB6BADE19B577820057C1A9 /* speedmathIcon_152x152.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFB6BA8419B566310057C1A9 /* SpeedMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB6BAB719B566310057C1A9 /* Build configuration list for PBXNativeTarget "SpeedMath" */;
+			buildPhases = (
+				CFB6BA8119B566310057C1A9 /* Sources */,
+				CFB6BA8219B566310057C1A9 /* Frameworks */,
+				CFB6BA8319B566310057C1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedMath;
+			productName = SpeedMath;
+			productReference = CFB6BA8519B566310057C1A9 /* SpeedMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB6BAA419B566310057C1A9 /* SpeedMathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB6BABA19B566310057C1A9 /* Build configuration list for PBXNativeTarget "SpeedMathTests" */;
+			buildPhases = (
+				CFB6BAA119B566310057C1A9 /* Sources */,
+				CFB6BAA219B566310057C1A9 /* Frameworks */,
+				CFB6BAA319B566310057C1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB6BAAC19B566310057C1A9 /* PBXTargetDependency */,
+			);
+			name = SpeedMathTests;
+			productName = SpeedMathTests;
+			productReference = CFB6BAA519B566310057C1A9 /* SpeedMathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB6BA7D19B566300057C1A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = OllieCo;
+				TargetAttributes = {
+					CFB6BA8419B566310057C1A9 = {
+						DevelopmentTeam = H5TK738UAK;
+					};
+					CFB6BAA419B566310057C1A9 = {
+						TestTargetID = CFB6BA8419B566310057C1A9;
+					};
+				};
+			};
+			buildConfigurationList = CFB6BA8019B566300057C1A9 /* Build configuration list for PBXProject "SpeedMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFB6BA7C19B566300057C1A9;
+			productRefGroup = CFB6BA8619B566310057C1A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFB6BA8419B566310057C1A9 /* SpeedMath */,
+				CFB6BAA419B566310057C1A9 /* SpeedMathTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB6BA8319B566310057C1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BAE419B577820057C1A9 /* speedmathIcon_80x80.png in Resources */,
+				CFB6BAE219B577820057C1A9 /* speedmathIcon_60x60.png in Resources */,
+				CFB6BABE19B5668A0057C1A9 /* Main_iPad.storyboard in Resources */,
+				CFB6BAE519B577820057C1A9 /* speedmathIcon_120x120.png in Resources */,
+				CFB6BAE119B577820057C1A9 /* speedmathIcon_58x58.png in Resources */,
+				CFB6BA9519B566310057C1A9 /* InfoPlist.strings in Resources */,
+				CFB6BAA019B566310057C1A9 /* Images.xcassets in Resources */,
+				CFB6BADF19B577820057C1A9 /* speedmathIcon_29x29.png in Resources */,
+				CFB6BAE619B577820057C1A9 /* speedmathIcon_152x152.png in Resources */,
+				CFB6BAE019B577820057C1A9 /* speedmathIcon_40x40.png in Resources */,
+				CFB6BAE319B577820057C1A9 /* speedmathIcon_76x76.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB6BAA319B566310057C1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BAB219B566310057C1A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFB6BA8119B566310057C1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BACA19B56BF00057C1A9 /* UsersViewController.m in Sources */,
+				CFB6BA9B19B566310057C1A9 /* RHAppDelegate.m in Sources */,
+				CFB6BAC319B56BB80057C1A9 /* UserViewController.m in Sources */,
+				CFB6BACC19B56BFA0057C1A9 /* LogFileViewController.m in Sources */,
+				CFB6BAC819B56BE60057C1A9 /* UserTableViewCell.m in Sources */,
+				CFB6BAC119B5677A0057C1A9 /* MainMathViewController.m in Sources */,
+				CFB6BAD019B56C0A0057C1A9 /* StatsViewController.m in Sources */,
+				CFB6BACE19B56C020057C1A9 /* LogFileCell.m in Sources */,
+				CFB6BA9719B566310057C1A9 /* main.m in Sources */,
+				CFB6BA9E19B566310057C1A9 /* SpeedMath.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB6BAA119B566310057C1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6BAB419B566310057C1A9 /* SpeedMathTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFB6BAAC19B566310057C1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB6BA8419B566310057C1A9 /* SpeedMath */;
+			targetProxy = CFB6BAAB19B566310057C1A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFB6BA9319B566310057C1A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB6BA9419B566310057C1A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFB6BAB019B566310057C1A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB6BAB119B566310057C1A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFB6BAB519B566310057C1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CFB6BAB619B566310057C1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFB6BAB819B566310057C1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedMath/SpeedMath-Prefix.pch";
+				INFOPLIST_FILE = "SpeedMath/SpeedMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFB6BAB919B566310057C1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedMath/SpeedMath-Prefix.pch";
+				INFOPLIST_FILE = "SpeedMath/SpeedMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFB6BABB19B566310057C1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedMath.app/SpeedMath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedMath/SpeedMath-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpeedMathTests/SpeedMathTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CFB6BABC19B566310057C1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedMath.app/SpeedMath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedMath/SpeedMath-Prefix.pch";
+				INFOPLIST_FILE = "SpeedMathTests/SpeedMathTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFB6BA8019B566300057C1A9 /* Build configuration list for PBXProject "SpeedMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB6BAB519B566310057C1A9 /* Debug */,
+				CFB6BAB619B566310057C1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB6BAB719B566310057C1A9 /* Build configuration list for PBXNativeTarget "SpeedMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB6BAB819B566310057C1A9 /* Debug */,
+				CFB6BAB919B566310057C1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB6BABA19B566310057C1A9 /* Build configuration list for PBXNativeTarget "SpeedMathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB6BABB19B566310057C1A9 /* Debug */,
+				CFB6BABC19B566310057C1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFB6BA9C19B566310057C1A9 /* SpeedMath.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFB6BA9D19B566310057C1A9 /* SpeedMath.xcdatamodel */,
+			);
+			currentVersion = CFB6BA9D19B566310057C1A9 /* SpeedMath.xcdatamodel */;
+			path = SpeedMath.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFB6BA7D19B566300057C1A9 /* Project object */;
+}
